@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="container py-3 flex items-center justify-between">
         {/* logo secction */}
         <div>
-           <img src={Logo} alt='logo' className='w-36' />
+           <img src={Logo} alt='logo' className='w-40' />
         </div>
         {/* Navlinks section  */}
         <ul className='hidden md:flex items-center gap-5'>
@@ -23,7 +23,8 @@ const Navbar = () => {
         </ul>
         {/* Button section */}
         <div>
-            <button className='border border-gray-400 px-4 py-2 rounded-lg'>Get in touch</button>
+            <button className='border border-gray-400 px-4 py-2 rounded-lg
+            hover:bg-primary hover:text-white transform duration-300'>Get in touch</button>
         </div>
     </div>
    </header>
