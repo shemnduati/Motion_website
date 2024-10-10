@@ -3,7 +3,7 @@ import Logo from '../../assets/logo.png'
 const Navbar = () => {
   return (
    <header>
-    <div className="container py-3 flex items-center justify-between">
+    <div className="container py-5 flex items-center justify-between">
         {/* logo secction */}
         <div>
            <img src={Logo} alt='logo' className='w-40' />
