@@ -16,7 +16,6 @@ const Hero = () => {
                 identify coronavirus
                 symptomps and get reliable  information
                 regarding COVID-19 concerns.
-
             </p>
             </div>          
             <div>
