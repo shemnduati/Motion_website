@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
+import HowItHelps from './components/HowItHelps/HowItHelps'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <main className=''>
         <Navbar />
         <Hero />
+        <HowItHelps />
       </main>
     </>
   )
