@@ -1,8 +1,15 @@
 import React from 'react'
-import Logo from '../../assets/logo.png'
+import Logo from '../../assets/logo.png';
+import {motion} from "framer-motion";
+import { SlideUp } from '../../utility/animation';    
+
 const Navbar = () => {
   return (
-   <header>
+   <motion.header
+    initial={{ opacity:0, y:-100 }}
+    animate={{ opacity:1, y:0 }}
+    transition={{ duration: 0.5, delay : 0.6 }}
+   >
     <div className="container py-5 flex items-center justify-between">
         {/* logo secction */}
         <div>
@@ -11,14 +18,8 @@ const Navbar = () => {
         {/* Navlinks section  */}
         <ul className='hidden md:flex items-center gap-5'>
             <li><a href="#">Products</a></li>
-        </ul>
-        <ul>
             <li><a href="#">Customer Stories</a></li>
-        </ul>
-        <ul>
             <li><a href="#">About</a></li>
-        </ul>
-        <ul>
             <li><a href="#">Blogs</a></li>
         </ul>
         {/* Button section */}
@@ -27,7 +28,7 @@ const Navbar = () => {
             hover:bg-primary hover:text-white transform duration-300'>Get in touch</button>
         </div>
     </div>
-   </header>
+   </motion.header>
   )
 }
 

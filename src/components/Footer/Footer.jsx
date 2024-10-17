@@ -1,11 +1,11 @@
 import React from 'react';
 import Logo from "../../assets/logo.png";
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
-
+import {motion} from "framer-motion";
 
 function Footer() {
   return (
-  <footer>
+  <motion.footer initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
     <div className="container py-20 flex flex-col md:flex-row md:item-center justify-between gap-10">
         {/* brand info */}
       <div className='space-y-4'>
@@ -23,7 +23,7 @@ function Footer() {
             <FaLinkedin className='hover:text-primary duration-200' />
         </div>
     </div>
-  </footer>
+  </motion.footer>
   )
 }
 
